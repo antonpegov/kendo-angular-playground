@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  clicks = 0;
 
   onButtonClick() {
-      this.title = 'Hello from Kendo UI!';
+      this.clicks += 1;
+      this.title = `Hello from Kendo UI! You clicked ${this.clicks} times.`;
   }
 }
